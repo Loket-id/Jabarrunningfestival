@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#780008">
+<title>Pendaftaran Berhasil — Jabar Running Festival 2027</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23c90012'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='900' fill='%23fff' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#c90012;--red-deep:#780008;--red-bright:#e52337;--gold:#e9b949;--green:#168348;--ink:#1b1415;--muted:#7d7170;--line:#f0e4e1;--soft:#fdf5f4;--font:'Plus Jakarta Sans','Segoe UI',Inter,Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#f5efec;color:var(--ink);font-family:var(--font);display:flex;flex-direction:column;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(620px circle at 90% -5%,rgba(201,0,18,.06),transparent 60%),radial-gradient(520px circle at -8% 60%,rgba(201,0,18,.05),transparent 55%)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(22px)}}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pulse{50%{opacity:.45}}
+.top{position:relative;overflow:hidden;background:linear-gradient(125deg,#4d0005 0%,#8f000c 45%,#c90012 78%,#dc1024 100%);color:#fff;text-align:center;padding:28px 18px}
+.top::before,.top::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.top::before{width:340px;height:340px;top:-170px;right:-90px;background:radial-gradient(circle,rgba(255,130,140,.38),transparent 62%);animation:float 9s ease-in-out infinite}
+.top::after{width:280px;height:280px;bottom:-170px;left:-90px;background:radial-gradient(circle,rgba(233,185,73,.22),transparent 62%);animation:float 11s ease-in-out infinite reverse}
+.top>*{position:relative;z-index:1}
+.brand{font-size:10px;font-weight:800;letter-spacing:.3em;color:var(--gold)}
+.event{font-size:9.5px;letter-spacing:.18em;color:#ffc7cb;margin-top:7px;font-weight:600}
+.wrap{width:min(680px,calc(100% - 26px));margin:34px auto 56px;flex:1;animation:rise .5s ease both}
+.panel{background:#fff;border:1px solid rgba(148,20,25,.08);border-radius:20px;box-shadow:0 30px 70px -22px rgba(80,10,12,.26);overflow:hidden}
+.card-top{height:6px;background:linear-gradient(90deg,#780008,#c90012 45%,#e52337 75%,#e9b949)}
+.hero{position:relative;overflow:hidden;text-align:center;padding:38px 30px 30px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fffaf8,#fff)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(300px circle at 50% -40%,rgba(22,131,72,.08),transparent 65%);pointer-events:none}
+.hero>*{position:relative}
+.badge{width:88px;height:88px;margin:0 auto 18px;border-radius:50%;background:linear-gradient(135deg,#e9f9ef,#d4f4e1);display:grid;place-items:center;box-shadow:0 0 0 10px rgba(22,131,72,.07),0 18px 40px rgba(22,131,72,.16);animation:pop .45s ease both}
+.badge svg{width:42px;height:42px;stroke:var(--green);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.badge path{stroke-dasharray:60;stroke-dashoffset:60;animation:draw .7s .35s ease forwards}
+.eyebrow{font-size:9.5px;font-weight:800;letter-spacing:.26em;color:var(--green)}
+h1{font-size:clamp(26px,6vw,36px);line-height:1.05;margin:10px 0 8px;letter-spacing:-.03em;text-transform:uppercase;font-weight:800}
+.lead{max-width:470px;margin:0 auto;color:var(--muted);font-size:12.5px;line-height:1.75}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:9px 16px;border-radius:30px;background:#fff4dd;border:1px solid #f4e3bb;color:#8c5900;font-size:9.5px;font-weight:800;letter-spacing:.14em}
+.status i{width:8px;height:8px;border-radius:50%;background:#e5a324;animation:pulse 1.2s infinite}
+.received{margin-top:11px;font-size:10.5px;color:#9a8d89}
+.body{padding:26px 30px 30px}
+.section-title{font-size:10px;font-weight:800;letter-spacing:.18em;color:var(--red);margin:0 0 13px}
+.summary{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.sum-row{display:flex;justify-content:space-between;gap:14px;padding:12px 16px;border-top:1px solid #f5ece9;font-size:12.5px}
+.sum-row:first-child{border-top:0}
+.sum-row span{color:var(--muted)}
+.sum-row strong{text-align:right;overflow-wrap:anywhere;font-weight:700}
+.sum-row.total{background:linear-gradient(135deg,#fff4f3,#ffeceb);color:#a9000b;font-weight:800;border-top:1px solid #f6d9d7}
+.sum-row.total strong{font-size:19px;color:#a9000b;font-variant-numeric:tabular-nums}
+.notice{background:var(--soft);border:1px solid #f3d9db;padding:13px 15px;border-radius:12px;color:#70494d;font-size:11px;line-height:1.65;margin-top:18px}
+.notice b{color:var(--red)}
+.actions{display:flex;gap:12px;margin-top:24px}
+.btn{flex:1;display:inline-flex;justify-content:center;align-items:center;text-decoration:none;border:0;border-radius:12px;padding:15px 20px;background:linear-gradient(135deg,#d51024,#8c000e);color:#fff;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 12px 26px rgba(201,0,18,.3);transition:transform .15s,box-shadow .2s,filter .2s;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(201,0,18,.38);filter:brightness(1.05)}
+.btn.secondary{background:#f1eae7;color:#5a4d4a;box-shadow:none;border:1px solid #e5dad6}
+.btn.secondary:hover{background:#faf4f2;box-shadow:none;filter:none}
+.foot{text-align:center;color:#988d89;font-size:9.5px;line-height:1.8;padding:0 16px 26px}
+.foot b{color:#6e6260;letter-spacing:.12em}
+@media(max-width:560px){.top{padding:24px 16px}.wrap{width:calc(100% - 20px);margin:22px auto 42px}.hero{padding:30px 20px 26px}.body{padding:22px 18px}.actions{flex-direction:column}.sum-row{font-size:11.5px;padding:10px 13px;flex-direction:column;gap:3px;align-items:flex-start}.sum-row strong{text-align:left}.sum-row.total strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">JABAR RUNNING FESTIVAL</div>
+  <div class="event">21–22 AGUSTUS 2027 · BANDUNG, JAWA BARAT</div>
+</header>
+<main class="wrap"><article class="panel">
+  <div class="card-top"></div>
+  <section class="hero">
+    <div class="badge"><svg viewBox="0 0 52 52" aria-hidden="true"><path d="M14 27l8 8 16-17"/></svg></div>
+    <div class="eyebrow">REGISTRATION SUBMITTED</div>
+    <h1>Terima Kasih!</h1>
+    <p class="lead">Data pendaftaran Anda telah melewati tahap pengisian. Simpan ringkasan ini sebagai referensi dan tunggu konfirmasi resmi dari panitia.</p>
+    <div class="status"><i></i>MENUNGGU VERIFIKASI PANITIA</div>
+    <div class="received" id="receivedAt" hidden></div>
+  </section>
+  <section class="body">
+    <h2 class="section-title">RINGKASAN PENDAFTARAN</h2>
+    <div class="summary">
+      <div class="sum-row"><span>Nama peserta</span><strong id="name">—</strong></div>
+      <div class="sum-row"><span>Email</span><strong id="email">—</strong></div>
+      <div class="sum-row"><span>WhatsApp</span><strong id="phone">—</strong></div>
+      <div class="sum-row"><span>Kategori</span><strong id="category">—</strong></div>
+      <div class="sum-row"><span>Nama BIB</span><strong id="bib">—</strong></div>
+      <div class="sum-row"><span>Size jersey</span><strong id="jersey">—</strong></div>
+      <div class="sum-row total"><span>Total pendaftaran</span><strong id="total">—</strong></div>
+      <div class="sum-row"><span>Bukti pembayaran</span><strong id="proof">—</strong></div>
+    </div>
+    <div class="notice"><b>Informasi penting:</b> Status pada halaman ini adalah tanda bahwa alur frontend selesai, bukan bukti pembayaran telah diterima atau diverifikasi. Panitia perlu memeriksa transaksi dan data Anda melalui sistem resmi. Jika belum menerima konfirmasi, hubungi layanan resmi penyelenggara.</div>
+    <div class="actions"><a class="btn" href="index.html">Kembali ke Beranda</a><a class="btn secondary" href="category.html">Lihat Kategori</a></div>
+  </section>
+</article></main>
+<footer class="foot"><b>JABAR RUNNING FESTIVAL 2027</b><br>#merayakanindonesia · #produklokalmendunia · #jawabaratistimewa</footer>
+<script>
+(()=>{try{const d=JSON.parse(sessionStorage.getItem("jrfRegistration")||"null");
+if(d){
+  const put=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v||"—";};
+  put("name",d.nama);put("email",d.email);put("phone",d.whatsapp);
+  put("category",({"5K":"5K Run","10K":"10K Run","HM":"Half Marathon (21,1K)","FM":"Full Marathon (42,195K)"})[d.kategori]||d.kategori);
+  put("bib",d.namaBib);put("jersey",d.jersey);
+  put("total",new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(Number(d.total)||0));
+  put("proof",d.namaFileBukti);
+  if(d.waktu){const r=document.getElementById("receivedAt");if(r){r.hidden=false;r.textContent="Diterima pada "+new Date(d.waktu).toLocaleString("id-ID",{day:"numeric",month:"long",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Jakarta"})+" WIB";}}
+}
+}catch(e){}})();
+</script>
+</body>
+</html>
